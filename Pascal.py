@@ -10,13 +10,6 @@ def generatePascal(depth):
         p[row] = thisRow
     return p
 
-def generatePascal420(depth):
-    triangle = generatePascal(depth)
-    for key in triangle:
-        for row in range(len(triangle[key])):
-            triangle[key][row] = 420
-    return triangle
-
 def simpleDisplayPascal(depth):
   triangle = generatePascal(depth)
   for row in list(triangle.keys()):
